@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presente para meu Amor! </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+	  background-color: #c3b3d2;
+	  
+    }
+
+	.textoamor {
+	  text-align: center;
+	  font-size:115%;
+
+	}
+	
+	
+    .carousel {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+	  border-color: #c3b3d2;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .control {
+      background-color: ;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+	  opacity: 60%
+    }
+
+    .control:hover {
+	
+    }
+  </style>
+</head>
+<body>
+<div class="textoamor">
+<text-align:center>
+Errou :(
+
+</div>
+
+
+<script>
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  let index = 0;
+
+  document.getElementById('next').addEventListener('click', () => {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  });
+
+  function updateCarousel() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+</script>
+
+</body>
+</html>
