@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Jogo dos Botões</title>
+    <style>
+        body {
+            font-family: Oswald, sans-serif;
+            text-align: center;
+			font-size: 22px;
+            margin-top: 50px;
+            background-color: #c3b3d2;
+			
+        }
+        button {
+            padding: 15px 0; /* Altura uniforme */
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6060C0;
+            color: white;
+            width: 200px; /* Largura fixa */
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .wrong {
+            background-color: #dc3545;
+        }
+        .wrong:hover {
+            background-color: #a71d2a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha a resposta certa!</h1>
+    <p>Qual o nome que daremos ao nosso filho?</p>
+    
+    <!-- Botão certo -->
+    <a href="errou.html">
+        <button>Gabriel</button>
+    </a>
+    
+    <!-- Botões errados -->
+    <a href="errou.html">
+        <button>Lucas</button>
+    </a>
+    <a href="pergunta3.html">
+        <button>Igor</button>
+    </a>
+    <a href="errou.html">
+        <button>Otavio</button>
+    </a>
+</body>
+</html>
